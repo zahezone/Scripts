@@ -4,6 +4,8 @@ function Brute-Basic-Auth
 
 <#
 
+This has changed...
+
 .SYNOPSIS
 PowerShell cmdlet for brute forcing basic authentication on web servers.
 
