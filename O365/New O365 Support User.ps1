@@ -50,7 +50,7 @@ $NewAdminUPN = -join($NewAdminUserPrefix,"@",$($InitialDomain.Name))
 
 $PasswordProfile=New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
 $PasswordProfile.ForceChangePasswordNextLogin = $false
-$PasswordProfile.Password= [System.Web.Security.Membership]::GeneratePassword(20,6)
+$PasswordProfile.Password = [System.Web.Security.Membership]::GeneratePassword(20,6)
 New-AzureADUser -DisplayName "RBC Support Admin" -GivenName "RBC Support" -SurName "Admin" -UserPrincipalName $NewAdminUPN -PasswordProfile $PasswordProfile -MailNickName rbc.support -AccountEnabled $true 
 
 Connect-MsolService
