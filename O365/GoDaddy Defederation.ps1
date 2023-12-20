@@ -14,4 +14,4 @@ Connect-MgGraph -Scopes "Directory.Read.All","Domain.Read.All","Domain.ReadWrite
 Get-MgDomain
 #See that the domain is “federated”#
 
-Update-MgDomain -DomainId "gatehouseprojects.com.au" -Authentication Managed
+Update-MgDomain -DomainId "carabergmannproperties.au" -Authentication Managed

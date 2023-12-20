@@ -1,7 +1,8 @@
 
-$user =  "admin@NexusCarecomau.onmicrosoft.com" #Read-Host "Please provide username that will be used for migration..."
+$user =  "admin@possibleinvestments.onmicrosoft.com" #Read-Host "Please provide username that will be used for migration..."
 
 
+Connect-ExchangeOnline
 
 Enable-OrganizationCustomization
 Get-Mailbox -ResultSize Unlimited | Add-MailboxPermission -AccessRights FullAccess -Automapping $false -User $user
