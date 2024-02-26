@@ -21,3 +21,6 @@ CleanLogfiles($IISLogPath)
 CleanLogfiles($ExchangeLoggingPath)
 CleanLogfiles($ETLLoggingPath)
 CleanLogfiles($ETLLoggingPath2)
+
+"Test"
+
